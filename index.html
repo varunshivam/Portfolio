@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varun Shivam - Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 50px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .hero-buttons {
+            margin-top: 20px;
+        }
+
+        .btn {
+            text-decoration: none;
+            color: white;
+            background: #ff5722;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 5px;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #e64a19;
+        }
+
+        /* Sections */
+        .about, .experience, .projects, .skills, .contact {
+            padding: 50px 20px;
+        }
+
+        /* Experience & Projects */
+        .exp-card, .project-card {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card .btn {
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        /* Skills */
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills li {
+            display: inline-block;
+            background: #ff9800;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin: 5px;
+            transition: transform 0.2s;
+        }
+
+        .skills li:hover {
+            transform: scale(1.1);
+        }
+
+        /* Contact */
+        .contact form {
+            width: 80%;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Varun Shivam</h1>
+        <p>Software Engineer | Frontend Developer</p>
+        <div class="hero-buttons">
+            <a href="VarunShivamResume.pdf" class="btn" download>Download Resume</a>
+            <a href="https://github.com/varunshivam" class="btn">GitHub</a>
+            <a href="https://linkedin.com/in/varun-shivam-0a4347295" class="btn">LinkedIn</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>About Me</h2>
+        <p>I am deeply curious about the technologies that drive our daily lives. Passionate about software engineering and eager to build innovative solutions.</p>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience">
+        <h2>Experience</h2>
+        <div class="exp-card">
+            <h3>Makes360</h3>
+            <p><strong>Role:</strong> Trainee Front-end Developer</p>
+            <p>Developed an anime website with various genres using HTML & CSS.</p>
+        </div>
+        <div class="exp-card">
+            <h3>Devtern</h3>
+            <p><strong>Role:</strong> Intern</p>
+            <p>Created a BMI calculator app with login functionality.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>BMI Calculator App</h3>
+            <p>Developed an app to calculate BMI and track health.</p>
+            <a href="https://github.com/varunshivam" class="btn">View on GitHub</a>
+        </div>
+        <div class="project-card">
+            <h3>Anime Website</h3>
+            <p>Built a front-end anime exploration website.</p>
+            <a href="https://github.com/varunshivam" class="btn">View Code</a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2>Skills & Technologies</h2>
+        <ul>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Git & GitHub</li>
+            <li>MySQL & PostgreSQL</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+</body>
+</html>
